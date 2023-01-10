@@ -1,0 +1,70 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	font-size: 1.1vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header { height: 20%; }
+nav { height: 40%; width: 70%; left: 50%; transform: translate(-50%, 0); z-index: 1; }
+.searchMy {
+	height: 50%;
+}
+.searchMy div { height: 100%; padding: 0px }
+.d-flex { width: 70%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+.d-flex button {
+}
+#info { position: absolute; right: 1%; top: 50%; transform:translate(0, -50%); line-height:20%; }
+#info a { color: black; }
+main {
+	height: 100%;
+}
+.message {
+	position: relative;
+	width: 60%;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.message h3 {
+	width: 50%;
+	position: relative;
+	left: 0.5%;
+}
+
+.message .table {
+	border: solid 2px white;
+	border-collapse: separate;
+	border-spacing: 40px 10px;
+	text-align: center;
+}
+
+
+
+#about {
+	border: solid 2px white;
+	border-collapse: separate;
+	border-spacing: 0px 20px;
+	text-align: left;
+}
+
+#about tbody tr td {
+	text-align: left;
+	padding-left: 0;
+}
+
+.message .table thead tr th{
+	width: 25%;
+}
+
+.message .table thead tr th svg {
+	width: 40%; height: 40%;
+   margin: 0; padding: 0;
+}
+
+.message .table li {
+	border: none;
+}
