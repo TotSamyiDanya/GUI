@@ -4,23 +4,36 @@ body, html {
 	font-size: 1.1vw;
 }
 
+* {
+animation-duration: 1s;
+animation-fill-mode: both;
+animation-name: fadeIn;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
-
-header { height: 20%; }
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+header { height: 20%; z-index: 10; }
 nav { height: 40%; width: 70%; left: 50%; transform: translate(-50%, 0); z-index: 1; }
+.dropdown-menu li {z-index: 10; background: #fff;}
 .searchMy {
 	height: 50%;
 }
-.searchMy div { height: 100%; padding: 0px }
+.searchMy div { height: 100%; padding: 0px; }
 .d-flex { width: 70%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); }
-.d-flex button { width: 5%; }
+.d-flex button { width: 5%; border-width: 1px; margin-right: 0.1%; }
+.d-flex input { border-width: 2px; width: 95%; }
 .d-flex button svg { width: 100%; height: 100%; margin: 0; padding: 0; }
 #info { position: absolute; right: 1%; top: 50%; transform:translate(0, -50%); line-height:20%; }
 #info a { color: black; }
 main {
+	position: relative;
 	height: 100%;
+	z-index: -10;
 }
 .message {
 	position: relative;
@@ -32,6 +45,11 @@ main {
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  z-index: 0;
+}
+
+.main svg {
+	z-index: 0;
 }
 
 .message h3 {
@@ -45,6 +63,7 @@ main {
 	border-collapse: separate;
 	border-spacing: 40px 10px;
 	text-align: center;
+	z-index: 0;
 }
 
 
@@ -76,16 +95,18 @@ main {
 
 .new {
 	position: relative;
-	height: 100%;
 	width: 60%;
 	left: 50%;
 	transform: translate(-50%,0);
 }
 
 .switch {
+	position: relative;
+	width: 60%;
+	left: 50%;
+	transform: translate(-50%,0);
 	height: 5.5%;
-	width: 100%;
-	margin-bottom: 4%;
+	margin-bottom: 2%;
 }
 
 .switch button {
@@ -114,4 +135,5 @@ main {
 }
 .invisible {
   visibility: hidden;
+  height: 0px;
 }
