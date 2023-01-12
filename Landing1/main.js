@@ -5,6 +5,7 @@ document.getElementById("ulBtn").onclick = function () {
 	}
 	else {
 		document.getElementById("switchUlStyle").classList.toggle("visible");
+		document.getElementById("switchUlStyle").classList.toggle(".changeheight");
 		document.getElementById("switchGridStyle").classList.toggle("invisible");
 	}
 }
