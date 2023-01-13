@@ -1,8 +1,18 @@
 body, html { height: 100%; width: 100%; font-size: 1.1vw; }
 * { animation-duration: 1s; animation-fill-mode: both; animation-name: fadeIn; }
 body::-webkit-scrollbar { display: none; }
-header { z-index: 10; }
-nav { height: 40%; width: 70%; left: 50%; transform: translate(-50%, 0); z-index: 1; }
+header { position:relative; z-index: 10; top: 1vw; color: black; }
+nav { height: 40%; width: 70%; left: 50%; transform: translate(-50%, 0); z-index: 1; font-size: 1.2vw; border-radius: 8px;}
+nav div {
+	 padding-top: 0.5vw; padding-bottom: 0.5vw;
+}
+.navbar-brand {
+	position: relative;
+	transform: translate(0,-5%);
+}
+nav div a {
+	 
+}
 .dropdown-menu li {z-index: 10; background: #fff;}
 .searchMy { height: 50%; }
 .searchMy div { height: 100%; padding: 0px; }
@@ -12,12 +22,14 @@ nav { height: 40%; width: 70%; left: 50%; transform: translate(-50%, 0); z-index
 .d-flex button svg { width: 100%; height: 100%; margin: 0; padding: 0; }
 #info { position: absolute; right: 1%; top: 50%; transform:translate(0, -50%); line-height:20%; }
 #info a { color: black; }
-.message { position: relative; width: 60%; left: 50%; transform: translate(-50%,0); margin-bottom: 5%; -moz-user-select: none; 
-	-khtml-user-select: none; -webkit-user-select: none; user-select: none; z-index: 0; font-size: 1.1vw; }
+.message { position: relative; width: 60%; left: 50%; transform: translate(-50%,0); margin-bottom: 1vw; -moz-user-select: none; 
+	-khtml-user-select: none; -webkit-user-select: none; user-select: none; z-index: 0; font-size: 1.3vw; background-color: #ece9e9; border-radius: 8px;}
 .message h3 { margin-top: 5%; width: 50%; position: relative; left: 0.5%; }
-.message .table { border: solid 2px white; border-collapse: separate; border-spacing: 40px 10px; text-align: center; z-index: 0; }
-main { padding-top: 2%;  flex: 1 0 auto; height: 47vw;}
-#about { width: 109%; border: solid 2px white; border-collapse: separate; border-spacing: 0px 20px; text-align: left; }
+.message .table { border: solid 2px #ece9e9; border-collapse: separate; border-spacing: 40px 10px; text-align: center; z-index: 0; }
+.message .table th { font-size: 1.1vw; }
+main h3 { padding-bottom: 1vw; }
+main { padding-top: 2%;  flex: 1 0 auto; height: 52vw; }
+#about { width: 109%; border: solid 2px white; border-collapse: separate; border-spacing: 0px 20px; text-align: left; border-color: transparent;}
 #about tbody tr td { text-align: left; padding-left: 0; }
 .message .table thead tr th{ width: 25%; }
 .message .table thead tr th svg { width: 40%; height: 40%; margin: 0; padding: 0; }
@@ -53,10 +65,11 @@ footer p {
 	bottom: 1.5vw;
 }
 
-.sundries { position: relative; width: 60%; left: 50%; transform: translate(-50%,0); margin-bottom: 5%; -moz-user-select: none; 
-	-khtml-user-select: none; -webkit-user-select: none; user-select: none; z-index: 0; font-size: 1.1vw; margin-top: 2vw;}
-.sundries  h3 { width: 50%; position: relative; left: 0.5%; }
-.sundries  table { border: solid 2px white; border-collapse: separate; border-spacing: 40px 10px; text-align: center; z-index: 0; }
+.sundries { position: relative; width: 60%; left: 50%; transform: translate(-50%,0); -moz-user-select: none; 
+	-khtml-user-select: none; -webkit-user-select: none; user-select: none; z-index: 0; font-size: 1.1vw; margin-bottom: 5vw; 
+background-color: #ece9e9; border-radius: 8px;}
+.sundries  h3 { width: 50%; position: relative; }
+.sundries  table { border-color: transparent; border-collapse: separate; border-spacing: 40px 10px; text-align: center; z-index: 0; }
 .sundries .table thead tr th{ width: 25%; }
 .sundries .table thead tr th svg { width: 40%; height: 40%; margin: 0; padding: 0; }
 .sundries .table li { border: none; }
@@ -90,6 +103,65 @@ footer p {
 
 .mb-3 textarea {
 	height: 15vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#book {
+	padding-top: 0;
+	height: 40vw;
+	width: 70%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-bottom: 5vw;
+}
+
+.bookInfo {
+	height: 100%;
+	width: 50%;
+	position: relative;
+	left: 100%;
+	transform: translate(-100%,0);
+}
+
+.bookInfo div {
+}
+
+#book img {
+	position: absolute;
+	height: 35vw;
+	width: 25vw;
+	left: 25%;
+	transform: translate(-50%,0);
+}
+
+.addInBasket {
+	height: 5vw;
+}
+
+.addInBasket input {
+	position: relative;
+	top: 2.5vw;
+	transform: translate(0, -50%);
+}
+
+#bookName {
+	position: relative;
+	width: 60%;
+	left: 50%;
+	transform: translate(-50%,0);
+	bottom: 2vw;
 }
 
 @keyframes fadeIn {
