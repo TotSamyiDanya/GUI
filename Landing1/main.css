@@ -1,168 +1,98 @@
-body, html {
-	height: 100%;
-	width: 100%;
-	font-size: 1.1vw;
-}
-
-* {
-animation-duration: 1s;
-animation-fill-mode: both;
-animation-name: fadeIn;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-@keyframes fadeIn {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
+body, html { height: 100%; width: 100%; font-size: 1.1vw; }
+* { animation-duration: 1s; animation-fill-mode: both; animation-name: fadeIn; }
+body::-webkit-scrollbar { display: none; }
 header { z-index: 10; }
 nav { height: 40%; width: 70%; left: 50%; transform: translate(-50%, 0); z-index: 1; }
 .dropdown-menu li {z-index: 10; background: #fff;}
-.searchMy {
-	height: 50%;
-}
+.searchMy { height: 50%; }
 .searchMy div { height: 100%; padding: 0px; }
 .d-flex { width: 70%; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); }
-.d-flex button { margin-top: 7%; width: 5%; border-width: 1px; margin-right: 0.1%; }
+.d-flex button { margin-top: 7%; width: 5%; border-width: 2.3px; margin-right: 0.1%; }
 .d-flex input { margin-top: 7%; border-width: 2px; width: 95%; }
 .d-flex button svg { width: 100%; height: 100%; margin: 0; padding: 0; }
 #info { position: absolute; right: 1%; top: 50%; transform:translate(0, -50%); line-height:20%; }
 #info a { color: black; }
-.message {
-	position: relative;
+.message { position: relative; width: 60%; left: 50%; transform: translate(-50%,0); margin-bottom: 5%; -moz-user-select: none; 
+	-khtml-user-select: none; -webkit-user-select: none; user-select: none; z-index: 0; font-size: 1.1vw; }
+.message h3 { margin-top: 5%; width: 50%; position: relative; left: 0.5%; }
+.message .table { border: solid 2px white; border-collapse: separate; border-spacing: 40px 10px; text-align: center; z-index: 0; }
+main { padding-top: 2%;  flex: 1 0 auto; height: 47vw;}
+#about { width: 109%; border: solid 2px white; border-collapse: separate; border-spacing: 0px 20px; text-align: left; }
+#about tbody tr td { text-align: left; padding-left: 0; }
+.message .table thead tr th{ width: 25%; }
+.message .table thead tr th svg { width: 40%; height: 40%; margin: 0; padding: 0; }
+.message .table li { border: none; }
+.new { position: relative; height: 100%; width: 60%; left: 50%; transform: translate(-50%,0); }
+.tableDiv table { border-collapse: separate; text-align: left; vertical-align: middle; font-size: 1.1vw; }
+.tableDiv tr td { height: 4vw; }
+.switchForm { height: 3vw; }
+.switch { position: relative; width: 60%; height: 100%; left: 50%; transform: translate(-50%,0); }
+.switch button { height: 100%; width: 5.5%; text-align: center; float: right; margin-left: 2%;}
+.switch button svg { width: 100%; height: 100%; margin: 0; padding: 0; }
+.tableDiv { visibility: hidden; height: 0vw; }
+#switchGridStyle { display: flex; visibility: visible; position: relative; width: 103%; }
+.visible { visibility: visible; }
+.invisible { visibility: hidden; height: 0vw; }
+.price { margin-bottom: 0.9vw; }
+.card-img-top { height: 13vw; width: 9vw; position: relative; left: 50%; transform: translate(-50%,5%); }
+.card-title {font-size: 1vw;}
+.price a { position: relative; left: 18%; transform: translate(-20%,0); font-size: 1vw;}
+footer { position: relative;}
+#footerTable { position: relative; bottom: 0; width: 60%; left: 50%; 
+	transform: translate(-50%,0); border-collapse: separate; font-size: 1.1vw; 
+	border: solid 2px white; }
+#footerTable th {
+	width: 33%;
+}
+hr { position: relative; left: 50%; transform: translate(-50%, 0); color: black; width: 60%; bottom: 1vw;}
+footer p {
 	width: 60%;
+	position: relative;
 	left: 50%;
 	transform: translate(-50%,0);
-	margin-bottom: 5%;
-	-moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  z-index: 0;
-  font-size: 1.3vw;
+	bottom: 1.5vw;
 }
 
-.message h3 {
-	margin-top: 5%;
+.sundries { position: relative; width: 60%; left: 50%; transform: translate(-50%,0); margin-bottom: 5%; -moz-user-select: none; 
+	-khtml-user-select: none; -webkit-user-select: none; user-select: none; z-index: 0; font-size: 1.1vw; margin-top: 2vw;}
+.sundries  h3 { width: 50%; position: relative; left: 0.5%; }
+.sundries  table { border: solid 2px white; border-collapse: separate; border-spacing: 40px 10px; text-align: center; z-index: 0; }
+.sundries .table thead tr th{ width: 25%; }
+.sundries .table thead tr th svg { width: 40%; height: 40%; margin: 0; padding: 0; }
+.sundries .table li { border: none; }
+
+.formDiv *,button {
+	font-size: 1vw;
+}
+
+.formDiv svg {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 25vw;
+}
+
+.formDiv form {
 	width: 50%;
 	position: relative;
-	left: 0.5%;
+	left: 100%;
+	transform: translate(-100%,0);
 }
 
-#second {
+.was-validated h3 {
+	width: 100%;
+	left: 0;
 }
 
-.message .table {
-	border: solid 2px white;
-	border-collapse: separate;
-	border-spacing: 40px 10px;
-	text-align: center;
-	z-index: 0;
+.noQuestion {
+	height: 2vw;
 }
 
-
-main {
-	padding-top: 2%;
-}
-#about {
-	width: 109%;
-	border: solid 2px white;
-	border-collapse: separate;
-	border-spacing: 0px 20px;
-	text-align: left;
+.mb-3 textarea {
+	height: 15vw;
 }
 
-#about tbody tr td {
-	text-align: left;
-	padding-left: 0;
-}
-
-.message .table thead tr th{
-	width: 25%;
-}
-
-.message .table thead tr th svg {
-	width: 40%; height: 40%;
-   margin: 0; padding: 0;
-}
-
-.message .table li {
-	border: none;
-}
-
-.new {
-	position: relative;
-	height: 44vw;
-	width: 60%;
-	left: 50%;
-	transform: translate(-50%,0);
-}
-
-.tableDiv table {
-	border-collapse: separate;
-	text-align: left;
-	vertical-align: middle;
-	font-size: 1.1vw;
-}
-
-.tableDiv tr td {
-	height: 4vw;
-}
-
-.switchForm {
-	height: 3vw;
-}
-
-.switch {
-	position: relative;
-	width: 60%;
-	height: 100%;
-	left: 50%;
-	transform: translate(-50%,0);
-}
-
-.switch button {
-	height: 100%;
-	width: 5.5%;
-	text-align: center;
-	float: right;
-	margin-left: 2%;
-}
-
-.switch button svg {
-	width: 100%; height: 100%; margin: 0; padding: 0;
-}
-
-.tableDiv {
-	visibility: hidden;
-	height: 0vw;
-}
-#switchGridStyle {
-	display: flex;
-	visibility: visible;
-	position: relative;
-	width: 103%;
-}
-
-.visible {
-  visibility: visible;
-}
-.changeheight {
-
-}
-.invisible {
-  visibility: hidden;	
-  height: 0vw;
-}
-
-.price {
-	margin-bottom: 0.9vw;
-}
-
-.price a {
-	position: relative;
-	left: 18%;
-	transform: translate(-20%,0);
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
 }
