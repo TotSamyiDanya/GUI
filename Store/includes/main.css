@@ -1,0 +1,60 @@
+html, body { height: 100%; }
+body::-webkit-scrollbar { width: 0; }
+body { -ms-overflow-style: none; }
+* { animation-duration: 1s; animation-fill-mode: both; animation-name: fadeIn; }
+@keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
+
+#loc_del { background-color: black; height: 40px; }
+#loc_del_items { height: 100%; width: 65%; position: relative; left: 50%; transform: translate(-50%, 0); 
+display: flex; flex-direction: row; }
+#loc_del_items .dropdown { height: 100%; }
+#loc_del_items .dropdown:hover { background-color: #888888; }
+.dropdown-menu li { border-radius: 0px; }
+.dropdown-menu li a { border-radius: 0px; }
+#loc_del_items .dropdown button { height: 100%; font-size: 13px; border-radius: 0px; background-color: black; border-color: black; transition: 0.25s linear;}
+#loc_del_items #items { font-size: 13px; position: absolute; right: 0; height: 100%; border-radius: 0px; }
+#items li { border-radius: 0px; height: 100%; background-color: black; border-color: black; transition: 0.25s linear; }
+#items li a { text-decoration: none; color: white; }
+#items svg { position: relative; bottom: 1.5px; margin-right: 6.5px; }
+#items li:hover { background-color: #2794fc; border-color: #2794fc; }
+#loc_del_items .dropdown button:hover { background-color: #888888; border-color: #888888; }
+
+
+#switch_nav_signin { padding-top: 1.5vw; font-size: 16px; }
+#switch_nav_signin #switch_signin_cont { width: 65%; position: relative; left: 50%; transform: translate(-50%, 0); height: 3vw; }
+#switch_signin { display: flex; flex-direction: row; }
+#switch_signin h1 { position:absolute; left: 50%; transform: translate(-50%, 0); }
+#switch { width: 30%; position: absolute; top: 50%; transform: translate(0, -50%); }
+/*Подчеркнутая рубрика*/
+#switch button { background-color: transparent; border-top: none; border-left: none; border-right: none;
+	border-bottom: 0.11vw solid black; padding-bottom: 0.3vw; display: inline-block; padding-left: 0; padding-right: 0; margin-right: 0.85vw; }
+#signin { width: 30%; position: absolute; top: 50%; transform: translate(0, -50%); right:0; }
+#signin button { background-color: transparent; border: none; float: right; margin-left: 1vw;}
+#nav { width: 66%; position: relative; left: 50%; transform: translate(-50%, 0); margin-top: 1.2vw; }
+#nav ul { position: relative; }
+#nav li { margin-right: 0.01vw; font-size: 15px; }
+#nav .container-fluid { padding-left: 0; padding-right: 0; }
+#navbarSupportedContent {}
+.d-flex {margin-right: 1vw;}
+.d-flex input { font-size: 14px; width: 13vw; border-radius: 0px; outline: none; border: 1px solid #888888; height: 1.8vw; padding-left: 0.5vw; }
+.d-flex button { border-radius: 0px; background-color: black; height: 1.8vw; width: 2.5vw;}
+.d-flex button svg { height: 1.3vw; width: 1.3vw; position: relative; left: 50%; top: 50%; transform: translate(-50%, -50%); vertical-align: top;  }
+#nav .btn:hover { background-color: #888888; border-color: #888888; }
+
+
+#main { height: 30vw; }
+
+
+#footer { position: relative; width: 100%; background-color: black; padding-top: 5vw;}
+#footer_table table { width: 65%; position: relative; left: 50%; transform: translate(-50%,0); color: white; font-size: 13px; 
+	border-color: black; border-collapse: separate; border-spacing: 0px 0px; padding-bottom: 5vw;}
+#footer_table table th { width: 25%; font-size: 15px; }
+#footer_table table td { position: relative; padding-bottom: 0px; vertical-align: middle; }
+#footer_table table td a { color: white; }
+#footer_table table svg {vertical-align: middle; }
+#about_media svg { margin-right: 0.4vw; }
+#payments svg { margin-right: 0.4vw; }
+#tg { margin-left: 1wv; }
+.shit {
+	background-color: white;
+}
